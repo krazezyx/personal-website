@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Alexander Bale</title>
+        <title>Alex Bale</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -19,36 +19,67 @@
 
         <!-- Hero Section -->
         <section id="hero">
-            <h1>Hi, I'm Alex 👋</h1>
-            <p>Data Analyst at L'Oréal · Finance & Tech enthusiast · Building things that actually matter.</p>
-            <a href="#contact" class="btn">Get in touch</a>
+            <div class="hero-tag">Available for opportunities</div>
+            <h1>Data Analyst.<br><span>Finance meets Tech.</span></h1>
+            <p>I'm Alex — building intelligent data systems at L'Oréal HQ and quantitative research tools in my own time. I sit at the intersection of finance, engineering and applied AI.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Get in touch</a>
+                <a href="#projects" class="btn-ghost">View my work →</a>
+            </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a Chartered Management Degree Apprentice at the University of West London, currently working as a Corporate Financial Data Analyst at L'Oréal Groupe HQ. I build data pipelines, analytics agents, and automation tools that drive real commercial decisions across £150M+ monthly revenue operations. I'm passionate about the intersection of finance, data, and technology.</p>
+            <div class="section-label">About</div>
+            <h2>Who I am</h2>
+            <div class="section-line"></div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Chartered Management Degree Apprentice at the University of West London, currently working as a Corporate Financial Data Analyst at L'Oréal Groupe HQ — where I build data pipelines, analytics agents, and automation tools that drive commercial decisions across £150M+ monthly revenue operations.</p>
+                    <p>Outside of work I'm deep in quantitative finance research — building multi-factor equity models, backtesting systematic strategies, and learning the infrastructure that sits behind institutional trading.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card fade-up fade-up-delay-1">
+                        <span class="stat-number">£150M+</span>
+                        <span class="stat-label">Monthly revenue supported</span>
+                    </div>
+                    <div class="stat-card fade-up fade-up-delay-2">
+                        <span class="stat-number">~95%</span>
+                        <span class="stat-label">Efficiency gain delivered</span>
+                    </div>
+                    <div class="stat-card fade-up fade-up-delay-3">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">NAMs using my platform</span>
+                    </div>
+                    <div class="stat-card fade-up">
+                        <span class="stat-number">Top 15%</span>
+                        <span class="stat-label">Morgan Stanley simulation</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
+            <div class="section-label">Projects</div>
+            <h2>What I've built</h2>
+            <div class="section-line"></div>
             <div class="project-grid">
 
-                <div class="project-card">
+                <div class="project-card fade-up">
                     <div class="card-tag">Quantitative Finance</div>
                     <h3>Multi-Factor Equity Research Model</h3>
-                    <p>Long-short strategy across the S&P 500 combining momentum, value, quality and low-volatility signals into a composite alpha score. Model is optimised with cvxpy, Ledoit-Wolf covariance estimation, and sector neutrality constraints.</p>
+                    <p>Long-short strategy across the S&P 500 combining momentum, value, quality and low-volatility signals into a composite alpha score — optimised with cvxpy, Ledoit-Wolf covariance estimation, and sector neutrality constraints. Live paper trading via Alpaca API.</p>
                     <div class="card-meta">
                         <span>Python · cvxpy · Alpaca API</span>
-                        <a href="https://github.com/krazezyx" target="_blank" class="card-link">View on GitHub →</a>
+                        <a href="https://github.com/krazezyx" target="_blank" class="card-link">GitHub →</a>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card fade-up fade-up-delay-1">
                     <div class="card-tag">AI · Data Engineering</div>
                     <h3>Cross-Divisional Analytics Agent</h3>
-                    <p>Agentic natural language analytics platform deployed at L'Oréal HQ, enabling real-time querying over sell-out data. Reduced insight generation from 45 minutes to under 30 seconds. Adopted by 6+ National Account Managers.</p>
+                    <p>Agentic natural language analytics platform deployed at L'Oréal HQ, enabling real-time querying over sell-out data. Reduced insight generation from 45 minutes to under 30 seconds — adopted by 6+ National Account Managers across commercial teams.</p>
                     <div class="card-meta">
                         <span>Python · GCP · BigQuery</span>
                         <span class="card-link">L'Oréal Groupe HQ</span>
@@ -60,12 +91,15 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Let's Talk</h2>
-            <p>Reach me at <a href="mailto:seankayz06@gmail.com">seankayz06@gmail.com</a></p>
-            <p>
-                <a href="http://www.linkedin.com/in/alex-bale">LinkedIn</a> &nbsp;·&nbsp;
-                <a href="https://github.com/krazezyx">GitHub</a>
-            </p>
+            <div class="section-label">Contact</div>
+            <h2>Let's talk</h2>
+            <div class="section-line"></div>
+            <p>Whether it's a role, a collaboration, or just a conversation about markets and data — I'm always open.</p>
+            <div class="contact-links">
+                <a href="mailto:seankayz06@gmail.com" class="contact-btn primary">Email me</a>
+                <a href="http://www.linkedin.com/in/alex-bale" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/krazezyx" target="_blank" class="contact-btn">GitHub</a>
+            </div>
         </section>
 
         <script src="script.js"></script>
