@@ -1,0 +1,184 @@
+/* ── Reset & Base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #1a1a2e;
+  line-height: 1.7;
+}
+
+/* ── Navigation ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #1a1a2e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f9cf9;
+}
+
+/* ── Hero ── */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 80px;
+  background: linear-gradient(135deg, #1a1a2e 60%, #16213e);
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.btn {
+  background-color: #4f9cf9;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* ── Sections ── */
+section {
+  padding: 100px 80px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  border-left: 4px solid #4f9cf9;
+  padding-left: 16px;
+}
+
+/* ── About ── */
+#about p {
+  max-width: 600px;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+/* ── Projects ── */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border-top: 4px solid #4f9cf9;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #1a1a2e;
+}
+
+.project-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* ── Contact ── */
+#contact {
+  background-color: #1a1a2e;
+}
+
+#contact h2 {
+  color: #ffffff;
+  border-left-color: #4f9cf9;
+}
+
+#contact p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+}
+
+#contact a {
+  color: #4f9cf9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ── Scroll Animations ── */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hero {
+    opacity: 1;
+    transform: none;
+}
